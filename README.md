@@ -5,3 +5,4 @@
 
 ## Informações Adicionais
 - O jogo está em fase de testes e pode conter alguns bugs.
+- O jogo será refeito em outra linguagem posteriormente.
