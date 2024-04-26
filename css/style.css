@@ -16,6 +16,9 @@
     margin-top: 10%; /* centralizar */
    
 }
+.score{
+    margin-left: 10%;
+}
 
 .pipe{
     position: absolute;

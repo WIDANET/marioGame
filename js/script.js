@@ -1,10 +1,12 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+const scoreDisplay = document.getElementById('score');
 
 const audioPrincipal = new Audio("../media/mario-music.mp3")
 const  marioMorre = new Audio ("../media/dead-mario.mp3")
 const marioJump = new Audio("../media/mario-pulo.mp3")
  
+let score = 1;
 
 const jump = () => {
     mario.classList.add('jump');
@@ -15,6 +17,7 @@ const jump = () => {
     mario.classList.remove('jump');
 
     }, 500);
+
 }
 
 const loop = setInterval(() => {
@@ -23,6 +26,7 @@ const loop = setInterval(() => {
     
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
+
     
     if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80){
 
@@ -40,6 +44,10 @@ const loop = setInterval(() => {
 
         clearInterval(loop);
     }
+    else if (pipePosition < -150) { 
+        updateScore();
+    }
+    
 
 }, 10);
 
