@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .game-board{
     width: 80%; /* 100% pra pegar a tela toda */
