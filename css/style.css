@@ -7,6 +7,15 @@ body{
     
 }
 
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
 .links {
     display: flex;
     justify-content: center; 
@@ -20,14 +29,6 @@ body{
     height: 35px; 
 }
 
-
-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .game-board{
     width: 80%; 
     height: 500px;
@@ -37,7 +38,7 @@ header{
     position: relative;
     overflow: hidden;
     background: linear-gradient(#87CEEB, #E0F6FF);
-    margin-top: 10%; 
+    margin-top: 5%; 
    
 }
 .score{
